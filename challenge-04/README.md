@@ -155,7 +155,18 @@ citado acima, no lugar de "pessoas".
 */
 
 > carro.adicionarPessoas = function( numeroPessoas ) {
-... return 'Já teemox [carro.quantidadePessoas] pessoas no carro!';
+    var totalPessoas = carro.quantidadePessoas + numeroPessoas;
+    if ( carro.quantidadePessoas === carro.assentos && totalPessoas >= carro.assentos ) {
+       return 'O carro já está lotado!';
+       }
+    if (totalPessoas > carro.assento) {
+       var quantasPessoasCabem = carro.assentos - carro.quantidadePessoas;
+       var pessoaSingular = quantasPessoasCabem === 1 ? ' pessoa ' : ' pessoas ';
+       var cabeSingular = quantasPessoasCabem === 1 ? ' cabe ' : ' cabem ';
+       return 'Só ' + cabeSingular + ' mais ' + quantasPessoasCabem + ' ' + pessoaSingular + '!';
+       }
+    carro.quantidadePessoas += numeroPessoas;
+    return 'Já temos ' + totalPessoas + ' pessoas no carro! ';
 
 
 /*
