@@ -37,6 +37,8 @@ false
 false
 > isTruthy(null)
 false
+> isTruthy()
+false
 
 /*
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
@@ -131,7 +133,7 @@ Crie um método chamado `obterMarcaModelo`, que retorne:
 Para retornar os valores de marca e modelo, utilize os métodos criados.
 */
 > carro.obterMarcaModelo = function() {
-... return 'Este carro é um' + ' ' +  carro.obterMarca() + ' ' + carro.obterModelo();
+... return 'Este carro é um ' + carro.obterMarca() + ' ' + carro.obterModelo();
 ... };
 [Function (anonymous)]
 > carro.obterMarcaModelo()
