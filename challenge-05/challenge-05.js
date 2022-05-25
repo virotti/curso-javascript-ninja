@@ -2,17 +2,22 @@
 Crie uma variável qualquer, que receba um array com alguns valores aleatórios
 - ao menos 5 - (fica por sua conta os valores do array).
 */
-// ?
+// > var array = [1, 2, 3, 4, '5']
+
 
 /*
 Crie uma função que receba um array como parâmetro, e retorne esse array.
 */
-// ?
+// > function myArray(arr) {
+... return arr;
+... }
+
 
 /*
 Imprima o segundo índice do array retornado pela função criada acima.
 */
-// ?
+// > myArray(array) [1]
+2
 
 /*
 Crie uma função que receba dois parâmetros: o primeiro, um array de valores; e o
