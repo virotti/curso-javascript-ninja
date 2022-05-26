@@ -16,7 +16,7 @@ Crie uma função que receba um array como parâmetro, e retorne esse array.
 /*
 Imprima o segundo índice do array retornado pela função criada acima.
 */
-// > myArray(array) [1]
+// > console.log( myArray(array) [1] );
 2
 
 /*
@@ -25,7 +25,9 @@ segundo, um número. A função deve retornar o valor de um índice do array que
 no primeiro parâmetro. O índice usado para retornar o valor, deve ser o número passado no
 segundo parâmetro.
 */
-// ?
+// > function myFunction2( arr, index) {
+... return arr[ index ];
+... }
 
 /*
 Declare uma variável que recebe um array com 5 valores, de tipos diferentes.
