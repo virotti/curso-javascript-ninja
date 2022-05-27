@@ -32,7 +32,7 @@ segundo parâmetro.
 /*
 Declare uma variável que recebe um array com 5 valores, de tipos diferentes.
 */
-// ?
+// myArray = [
 
 /*
 Invoque a função criada acima, fazendo-a retornar todos os valores do último
