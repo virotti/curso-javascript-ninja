@@ -32,13 +32,17 @@ segundo parâmetro.
 /*
 Declare uma variável que recebe um array com 5 valores, de tipos diferentes.
 */
-// myArray = [
+// myArray2 = ['ninja', 5.4, 5, true, [1, 2, 'Nunes'], {b: 2}]
 
 /*
 Invoque a função criada acima, fazendo-a retornar todos os valores do último
 array criado.
 */
-// ?
+// > console.log (myFunction2( myArray2, 0 ));
+// > console.log (myFunction2( myArray2, 1 ));
+// > console.log (myFunction2( myArray2, 2 ));
+// > console.log (myFunction2( myArray2, 3 ));
+// > console.log (myFunction2( myArray2, 4 ));
 
 /*
 Crie uma função chamada `book`, que recebe um parâmetro, que será o nome do
@@ -54,7 +58,25 @@ propriedades:
 - Se o parâmetro não for passado, a função deve retornar o objeto com todos
 os livros.
 */
-// ?
+> function book( bookname ) {
+... var allBooks = {
+..... 'Segredos': {
+....... quantidadePag: 333,
+....... autor: 'Daciuk',
+....... editora: 'Nova'
+....... },
+..... 'Introdução HTML5': {
+....... quantidadePag: 220,
+....... autor: 'José',
+....... editora: 'qualquer'
+....... },
+..... 'Smashing CSS': {
+....... quantidadePag: 222,
+....... autor: 'vinicius',
+....... editora: 'jonas'
+....... }
+..... }
+... };
 
 /*
 Usando a função criada acima, imprima o objeto com todos os livros.
