@@ -75,7 +75,8 @@ os livros.
 ....... autor: 'vinicius',
 ....... editora: 'jonas'
 ....... }
-..... }
+..... };
+      return allBooks
 ... };
 
 /*
