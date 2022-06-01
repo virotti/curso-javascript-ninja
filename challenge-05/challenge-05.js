@@ -76,31 +76,33 @@ os livros.
 ....... editora: 'jonas'
 ....... }
 ..... };
-      return allBooks
-... };
+      return !bookName ? allBooks : allbooks [ bookName ] // se não tiver parâemtro (bookName) informado pelo usuário, nada. Se tiver, mostrar ele
+        return allBooks;
+... }
 
 /*
 Usando a função criada acima, imprima o objeto com todos os livros.
 */
-// ?
+// console.log( book() );
 
 /*
 Ainda com a função acima, imprima a quantidade de páginas de um livro qualquer,
 usando a frase:
 "O livro [NOME_DO_LIVRO] tem [X] páginas!"
 */
-// ?
+var bookName = 'Smashing CSS'
+// console.log( 'O livro ' + bookName + ' tem ' + book( bookName ).quantidadePag  + ' páginas!' ); // poderia também escrever "book( 'Smashing CSS' ) [quantidadePag]"
 
 /*
 Ainda com a função acima, imprima o nome do autor de um livro qualquer, usando
 a frase:
 "O autor do livro [NOME_DO_LIVRO] é [AUTOR]."
 */
-// ?
+// console.log( 'O autor do livro ' + bookName + ' é ' + book( bookName ).autor + '.' );
 
 /*
 Ainda com a função acima, imprima o nome da editora de um livro qualquer, usando
 a frase:
 "O livro [NOME_DO_LIVRO] foi publicado pela editora [NOME_DA_EDITORA]."
 */
-// ?
+// console.log( 'O livro ' + bookName + ' foi publicado pela ' + book( bookName ).editora  + '.' ); 
