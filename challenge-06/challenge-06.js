@@ -35,7 +35,11 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
     - Se não houver time para a posição passada, deve retornar a mensagem:
     "Não temos a informação do time que está nessa posição."
 */
-// > function showTeamPosition(number) {
+> function showTeamPosition(number) {
+... teamPos = number++
+... return teamPos > 5 ? 'Não temos a informação do time que está nessa posição.' : 'O time que está em ' + teamPos  + 'º lugar é o ' + teams[teamPos] + '.';
+... }
+
 
 
 /*
