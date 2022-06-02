@@ -4,7 +4,10 @@ para começar o desafio.
 Declare uma variável chamada `championship` que receberá o nome do campeonato,
 e imprima o nome desse campeonato no console.
 */
-// ?
+// > var championship = 'Mundial';
+> console.log( championship );
+Mundial
+
 
 /*
 Declare uma variável chamada `teams`, que receberá um array com 5 elementos.
@@ -12,7 +15,7 @@ Os elementos serão nomes de times do campeonato escolhido, e os nomes devem
 estar na ordem em que eles aparecem na tabela no momento da solução desse
 desafio.
 */
-// ?
+// > var teams = [ 'Coríntians', 'Grêmio', 'Inter', 'Palmeiras', 'São Paulo' ];
 
 console.log( 'Times que estão participando do campeonato:', teams );
 
@@ -32,7 +35,8 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
     - Se não houver time para a posição passada, deve retornar a mensagem:
     "Não temos a informação do time que está nessa posição."
 */
-// ?
+// > function showTeamPosition(number) {
+
 
 /*
 Escolha 4 times do campeonato selecionado e mostre a posição dele, usando a
