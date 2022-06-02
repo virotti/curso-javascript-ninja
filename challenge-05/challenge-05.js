@@ -58,26 +58,27 @@ propriedades:
 - Se o parâmetro não for passado, a função deve retornar o objeto com todos
 os livros.
 */
-> function book( bookname ) {
+> function book( bookName ) {
+... 
 ... var allBooks = {
-..... 'Segredos': {
-....... quantidadePag: 333,
-....... autor: 'Daciuk',
-....... editora: 'Nova'
-....... },
-..... 'Introdução HTML5': {
-....... quantidadePag: 220,
-....... autor: 'José',
-....... editora: 'qualquer'
-....... },
-..... 'Smashing CSS': {
-....... quantidadePag: 222,
-....... autor: 'vinicius',
-....... editora: 'jonas'
-....... }
-..... };
-      return !bookName ? allBooks : allbooks [ bookName ] // se não tiver parâemtro (bookName) informado pelo usuário, nada. Se tiver, mostrar ele
-        return allBooks;
+... 'Segredos': {
+..... quantPag: 333,
+..... autor: 'Daciuk',
+..... editora: 'Nova'
+..... },
+... 'Introdução': {
+..... quantPag: 222,
+..... autor: 'José',
+..... editora: 'Qualquer'
+..... },
+... 'Smashing CSS': {
+..... quantPag: 222,
+..... autor: 'Vinicius',
+..... editora: 'Jonas'
+..... }
+... };
+... return !bookName ? allBooks : allBooks [ bookName ]// se não tiver parâemtro (bookName) informado pelo usuário, nada. Se tiver, mostrar ela
+... return allBooks;
 ... }
 
 /*
@@ -90,7 +91,7 @@ Ainda com a função acima, imprima a quantidade de páginas de um livro qualque
 usando a frase:
 "O livro [NOME_DO_LIVRO] tem [X] páginas!"
 */
-var bookName = 'Smashing CSS'
+var bookName = 'Smashing CSS';
 // console.log( 'O livro ' + bookName + ' tem ' + book( bookName ).quantidadePag  + ' páginas!' ); // poderia também escrever "book( 'Smashing CSS' ) [quantidadePag]"
 
 /*
